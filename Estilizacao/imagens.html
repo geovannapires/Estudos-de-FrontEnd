@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+ <!-- Testando a funcionalidades de object-fit e object-position com imagens -->
+<style>
+    div {
+        width: 200px;
+        height: 300px;
+        border: 5px;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #contain{
+        object-fit: contain;
+    }
+
+    #cover{
+        object-fit: cover;
+    }
+
+    #none{
+        object-fit: none;
+    }
+
+    #scale-down{
+        object-fit: scale-down;
+    }
+</style>
+</head>
+<body>
+    <h1>Estudando a propriedade <code>object-fit</code></h1>
+
+    <code>object fit: fill;</code>
+    <div>
+        <img src="https://love4everkm.com/wp-content/uploads/2022/03/gpjmeqyaiaaryay.jpeg" alt="" id="fill">
+    </div>
+    <br>
+    <hr>
+    <code>object fit: contain;</code>
+    <div>
+        <img src="https://love4everkm.com/wp-content/uploads/2022/03/gpjmeqyaiaaryay.jpeg" alt="" id="contain">
+    </div>
+    <br>
+    <hr>
+    <code>object fit: cover;</code>
+    <div>
+        <img src="https://love4everkm.com/wp-content/uploads/2022/03/gpjmeqyaiaaryay.jpeg" alt="" id="cover">
+    </div>
+    <br>
+    <hr>
+    <code>object fit: none;</code>
+    <div>
+        <img src="https://love4everkm.com/wp-content/uploads/2022/03/gpjmeqyaiaaryay.jpeg" alt="" id="none">
+    </div>
+    <br>
+    <hr>
+    <code>object fit: scale-down;</code>
+    <div>
+        <img src="https://love4everkm.com/wp-content/uploads/2022/03/gpjmeqyaiaaryay.jpeg" alt="" id="scale-down">
+    </div>
+
+    <h1>Posições das imagens <code>object-position</code></h1>
+    <p>Utilize <code>object-postion: x y;</code></p>
+</body>
+</html>
